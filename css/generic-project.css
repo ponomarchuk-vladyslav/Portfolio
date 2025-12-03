@@ -1,0 +1,104 @@
+* {
+    --containerColor: #6673b3;
+    --backgroundColor: #04173a;
+    --mainTextColor: #4d55a3;
+    --borderColor: #2622db;
+    --containerTextColor: #000000;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--mainTextColor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--mainTextColor);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 6vw;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+
+.content {
+    margin: 3vw;
+}
+
+.content h3 {
+    font-size: 3vw;
+    margin-left: 1vw;
+    line-height: 3vw;
+    margin: 0;
+    margin-top: 2vw;
+}
+
+.content .textbox {
+    font-size: 2vw;
+    line-height: 1.6;
+    border: var(--borderColor) 0.5vw solid;
+    background-color: var(--containerColor);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: var(--containerTextColor);
+    display: flex;
+    align-items: center;
+}
+
+.content .textbox a {
+    color: var(--containerTextColor);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.content .media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content .media-gallery .media-item {
+    box-sizing: border-box;
+    border: var(--borderColor) 0.5vw solid;
+    background-color: var(--containerColor);
+    padding: 1vw;
+    color: var(--containerTextColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.content .media-gallery .media-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+body h4 {
+    margin: 0;
+    padding: 0.3vw;
+    justify-self: center;
+}
+
+body form {
+    justify-self: center;
+}
+
+body form input {
+    font-size: 2vw;
+    padding: 0.5vw;
+    margin-top: 1vw;
+    border: var(--borderColor) 0.3vw solid;
+    border-radius: 0.5vw;
+    background-color: var(--containerColor);
+    color: var(--containerTextColor);
+    width: 15vw;
+    height: 5vw;
+    font-weight: bold;
+}

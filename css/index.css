@@ -1,0 +1,105 @@
+* {
+    --containerColor: #6673b3;
+    --backgroundColor: #04173a;
+    --mainTextColor: #4d55a3;
+    --borderColor: #2622db;
+    --containerTextColor: #000000;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--mainTextColor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.title h1 {
+    font-size: 10vw;
+    margin: 0;
+    text-decoration: underline;
+    margin: 0;
+    padding-bottom: 0px;
+    line-height: 10vw;
+}
+
+.title h3 {
+    font-size: 4vw;
+    margin: 0;
+    padding-top: 0px;
+    font-weight: normal;
+}
+
+.content {
+    margin: 3vw;
+}
+
+.content h2 {
+    font-size: 3vw;
+    margin-left: 1vw;
+    line-height: 3vw;
+    margin: 0;
+}
+
+.about-me {
+    margin: 0 auto;
+    font-size: 1.5vw;
+    line-height: 1.6;
+    border: var(--borderColor) 0.5vw solid;
+    background-color: var(--containerColor);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: var(--containerTextColor);
+    display: flex;
+    align-items: center;
+}
+
+.about-me img {
+    width: 15vw;
+    height: auto;
+    margin: 2vw;
+    border-radius: 1vw;
+    border: var(--borderColor) 0.2vw solid;
+}
+
+.projects-list {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    border: var(--borderColor) 0.5vw solid;
+    background-color: var(--containerColor);
+    padding: 2vw;
+    color: var(--containerTextColor);
+}
+
+.projects-list a {
+    color: var(--containerTextColor);
+    text-decoration: none;
+}
+
+.projects-list a:hover {
+    text-decoration: underline;
+}
+
+.projects-list h4 {
+    margin: 0vw;
+}
+
+.get-in-touch {
+    margin: 0 auto;
+    font-size: 1vw;
+    line-height: 2.5vw;
+    border: var(--borderColor) 0.5vw solid;
+    background-color: var(--containerColor);
+    padding: 2vw;
+    color: var(--containerTextColor);
+}
+
+.get-in-touch div {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}

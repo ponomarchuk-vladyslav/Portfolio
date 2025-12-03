@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/generic-project.css">
     <title>Programming 1 Project</title>
 </head>
-<body>
-  <h1>My first project!</h1>
-  <p>My first project, done on my first year of college!</p>
-  <p>I lacked a lot of technical knowledge back then, no lists, classes or objects, but even with this limited knowledge I still succeeded.</p>
-  <p>The display is also lacking, being a terminal window, which has issues with quickly "rendering", colors, and as it turns out, being recorded.</p>
-  <p>The game itself has a very simple premise, zombies are spawning to kill you, you must survive as long as possible.</p>
 
-  <img src="../assets/Prog1Project/Prog1ProjectTitle.png">
-  <img src="../assets/Prog1Project/prog1projectinstructions.gif">
-  <img src="../assets/Prog1Project/Prog1ProjectGameplay.png">
-  <p>Gameplay preview. Unfortunately, GitHub doesn't accept files over 25mb, so I had to compress it.</p>
-  <img src="../assets/Prog1Project/prog1projectgameplay.gif">
-  
-  <a href="../assets/Prog1Project/Prog 1 Final Project - Game.zip" download>Download Game</a>
+<body>
+    <a href="../index.html">
+        << Back</a>
+
+            <h1>Outnumbered</h1>
+
+            <div class="content">
+                <h3>Context</h3>
+                <div class="textbox">
+                    <p>
+                        This project was done as my programming 1 final project, during my first semester.
+                        I was already somewhat familiar with programming when starting the program, because I learned
+                        how to code in Python when I was 12,
+                        however my general programming knowledge and specific C# knowledge was still pretty limited.
+                        It's a miracle that this project was as good as it is, because I didn't even know how to use
+                        lists, let alone objects, classes or pathfinding.
+                    </p>
+                </div>
+
+                <h3>Description</h3>
+                <div class="textbox">
+                    <p>
+                        The premise of this game is simple: Zombies are coming from all sides, you must survive as long
+                        as possible.
+                        You can move around and shoot in cardinal directions.
+                        Code-wise, the game is terrible: the zombies are not objects, their health and position is
+                        stored in different arrays, connected together by a single index.
+                        Because it's arrays, there's always a hundred zombies that never truly die, they just reset and
+                        return to the edge.
+                        The display is also not good, I optimized it as much as I could, but there's a limit as to how
+                        fast the terminal can render text, so there's constant flickering, but if I followed my original
+                        plan of having colors, it wouldn't fully render the screen in time before the next render.
+                        Overall, I did a lot with very little knowledge, but there's still a lot of room for
+                        improvement.
+                    </p>
+                </div>
+
+                <h3>Demonstration</h3>
+                <div class="media-gallery">
+                    <div class="media-item">
+                        <img src="../assets/Prog1Project/Prog1ProjectTitle.png">
+                        <p>The title screen.</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../assets/Prog1Project/prog1projectinstructions.gif">
+                        <p>Title screen and instructions demonstration.</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../assets/Prog1Project/Prog1ProjectGameplay.png">
+                        <p>Gameplay screen.</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../assets/Prog1Project/prog1projectgameplay.gif">
+                        <p>Gameplay preview. Unfortunately, GitHub doesn't accept files over 25mb, so I had to compress
+                            it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Check out the project yourself!</h4>
+            <form action="../assets/Prog1Project/Prog 1 Final Project - Game.zip">
+                <input type="submit" value="Download" />
+            </form>
 </body>
+
 </html>
