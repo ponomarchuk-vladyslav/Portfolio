@@ -1,9 +1,9 @@
 * {
-    --containerColor: #6673b3;
-    --backgroundColor: #04173a;
-    --mainTextColor: #4d55a3;
-    --borderColor: #2622db;
-    --containerTextColor: #000000;
+    --containerColor: #8fa2dd;
+    --backgroundColor: #1f3f75;
+    --mainTextColor: #6f7cd1;
+    --borderColor: #6b67ff;
+    --containerTextColor: #0f0f0f;
 }
 
 body {
@@ -21,24 +21,25 @@ body {
 }
 
 .title h1 {
-    font-size: 10vw;
+    font-size: clamp(40px, 8vw, 90px);
     margin: 0;
     text-decoration: underline;
     margin: 0;
     padding-bottom: 0px;
-    line-height: 10vw;
+    line-height: 1.1;
 }
 
 .title h3 {
-    font-size: 4vw;
+    font-size: clamp(18px, 3vw, 32px);
     margin: 0;
     padding-top: 0px;
     font-weight: normal;
 }
 
 .content {
-    margin: 3vw;
+    margin: 3vw auto;
     max-width: 1000px;
+    width: 100%;
 }
 
 .content h2 {
@@ -46,6 +47,7 @@ body {
     margin-left: 1vw;
     line-height: 30px;
     margin: 0;
+    margin-bottom: 5px;
 }
 
 .about-me {
@@ -54,15 +56,16 @@ body {
     line-height: 1.6;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
-    padding-left: 2vw;
-    padding-right: 2vw;
     color: var(--containerTextColor);
     display: flex;
     align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 10px;
 }
 
 .about-me img {
-    width: 15vw;
+    width: clamp(120px, 18vw, 250px);
     height: auto;
     margin: 2vw;
     border-radius: 1vw;
@@ -71,11 +74,13 @@ body {
 
 .projects-list {
     font-size: 20px;
-    line-height: 25px;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
     padding: 2vw;
     color: var(--containerTextColor);
+    padding: 2rem;
+    line-height: 1.7;
+    border-radius: 10px;
 }
 
 .projects-list a {
@@ -84,7 +89,7 @@ body {
 }
 
 .projects-list a:hover {
-    text-decoration: underline;
+    color: #333;
 }
 
 .projects-list h4 {
@@ -93,17 +98,18 @@ body {
 
 .get-in-touch {
     margin-top: 2vw;
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: clamp(20px, 2vw, 20px);
+    line-height: 1.6;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
     padding: 2vw;
     color: var(--containerTextColor);
+    border-radius: 10px;
 }
 
 .get-in-touch div {
     display: flex;
-    width: 70%;
     justify-content: space-between;
-    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }

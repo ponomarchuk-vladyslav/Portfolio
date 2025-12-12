@@ -1,9 +1,9 @@
 * {
-    --containerColor: #6673b3;
-    --backgroundColor: #04173a;
-    --mainTextColor: #4d55a3;
-    --borderColor: #2622db;
-    --containerTextColor: #000000;
+    --containerColor: #8fa2dd;
+    --backgroundColor: #1f3f75;
+    --mainTextColor: #6f7cd1;
+    --borderColor: #6b67ff;
+    --containerTextColor: #0f0f0f;
 }
 
 body {
@@ -20,16 +20,39 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 6vw;
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.title > h1 {
+    font-size: clamp(20px, 6vw, 60px);
     margin-top: 5vh;
-    margin-left: 10vw;
+    margin-left: clamp(30px, 10vw, 100px);
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.title > a {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.content .textbox,
+.content .media-gallery .media-item {
+    border-radius: 10px;
+}
+
+.content .textbox {
+    line-height: 1.6;
+    padding: 1.5rem;
 }
 
 .content {
     margin: 3vw;
     max-width: 1000px;
-    
 }
 
 .content h3 {
@@ -38,6 +61,7 @@ h1 {
     line-height: 30px;
     margin: 0;
     margin-top: 2vw;
+    margin-bottom: 5px;
 }
 
 .content .textbox {
@@ -77,9 +101,11 @@ h1 {
     align-items: center;
     width: 40vw;
     max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
-.content .media-gallery .media-item img, video {
+.content .media-gallery .media-item img,
+.content .media-gallery .media-item video {
     max-width: 100%;
     height: auto;
     margin-bottom: 1vw;
@@ -106,4 +132,9 @@ body form input {
     width: 15vw;
     height: 5vw;
     font-weight: bold;
+}
+
+body form input:hover {
+    background-color: #aebdf0;
+    cursor: pointer;
 }
