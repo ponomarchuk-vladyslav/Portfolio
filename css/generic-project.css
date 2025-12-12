@@ -72,6 +72,7 @@ a {
     padding-right: 2vw;
     color: var(--containerTextColor);
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
