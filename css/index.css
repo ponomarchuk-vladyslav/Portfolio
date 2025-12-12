@@ -59,6 +59,7 @@ body {
     color: var(--containerTextColor);
     display: flex;
     align-items: center;
+    
     padding: 2rem;
     gap: 2rem;
     border-radius: 10px;
@@ -70,6 +71,17 @@ body {
     margin: 2vw;
     border-radius: 1vw;
     border: var(--borderColor) 0.2vw solid;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-me img {
+    width: 70%;
+  }
 }
 
 .projects-list {
@@ -97,7 +109,7 @@ body {
 }
 
 .get-in-touch {
-    font-size: clamp(20px, 2vw, 20px);
+    font-size: clamp(10px, 2vw, 20px);
     line-height: 1.6;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
