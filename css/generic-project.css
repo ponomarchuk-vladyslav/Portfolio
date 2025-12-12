@@ -25,6 +25,7 @@ h1 {
 
 .content {
     margin: 3vw;
+    max-width: 1000px;
 }
 
 .content h3 {

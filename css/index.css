@@ -35,6 +35,7 @@ body {
 
 .content {
     margin: 3vw;
+    max-width: 1000px;
 }
 
 .content h2 {
@@ -88,7 +89,7 @@ body {
 }
 
 .get-in-touch {
-    margin: 0 auto;
+    margin-top: 2vw;
     font-size: 1vw;
     line-height: 2.5vw;
     border: var(--borderColor) 0.5vw solid;
