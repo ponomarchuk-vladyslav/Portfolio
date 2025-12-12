@@ -125,6 +125,7 @@ body form input {
     font-size: 20px;
     padding: 0.5vw;
     margin-top: 1vw;
+    margin-bottom: 1vw;
     border: var(--borderColor) 0.3vw solid;
     border-radius: 0.5vw;
     background-color: var(--containerColor);

@@ -97,7 +97,6 @@ body {
 }
 
 .get-in-touch {
-    margin-top: 2vw;
     font-size: clamp(20px, 2vw, 20px);
     line-height: 1.6;
     border: var(--borderColor) 0.5vw solid;
@@ -110,6 +109,7 @@ body {
 .get-in-touch div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
