@@ -9,6 +9,9 @@
 body {
     background-color: var(--backgroundColor);
     color: var(--mainTextColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -39,15 +42,15 @@ body {
 }
 
 .content h2 {
-    font-size: 3vw;
+    font-size: 30px;
     margin-left: 1vw;
-    line-height: 3vw;
+    line-height: 30px;
     margin: 0;
 }
 
 .about-me {
     margin: 0 auto;
-    font-size: 1.5vw;
+    font-size: 15px;
     line-height: 1.6;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
@@ -67,8 +70,8 @@ body {
 }
 
 .projects-list {
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: 20px;
+    line-height: 25px;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
     padding: 2vw;
@@ -90,7 +93,7 @@ body {
 
 .get-in-touch {
     margin-top: 2vw;
-    font-size: 1vw;
+    font-size: 2vw;
     line-height: 2.5vw;
     border: var(--borderColor) 0.5vw solid;
     background-color: var(--containerColor);
@@ -100,7 +103,7 @@ body {
 
 .get-in-touch div {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
 }
